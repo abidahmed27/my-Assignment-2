@@ -1,0 +1,407 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffe4e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d63384;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #d63384;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.banner-text {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #c2185b;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.banner-img {
+  flex: 1 1 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Plants Section */
+.plants {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.plants h2 {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.plants p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.plant-card {
+  background-color: #fff0f5;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
+}
+
+.plant-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.plant-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.plant-card p {
+  font-weight: bold;
+  color: #d63384;
+}
+
+.plant-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.plant-card button:hover {
+  background-color: #b0246f;
+}
+
+/* Lover Section */
+.lover {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e6f4ea;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lover img {
+  max-width: 100%;
+  flex: 1 1 300px;
+  border-radius: 10px;
+}
+
+.lover-content {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+.lover-content h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.lover-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #444;
+}
+
+.trusted-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  font-weight: bold;
+  border-radius: 20px;
+  animation: spin 2s linear infinite;
+}
+
+/* Trusted badge spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Join Section */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.deals-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.deals-section h2 {
+  color: #e74c3c;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.deals-section p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+}
+
+.deals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.deal-card {
+  position: relative;
+  width: 300px;
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.deal-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.deal-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deal-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.deal-content a {
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.join-content{
+  border: 200px 100px;
+  align-items: center;
+  align-content: center;
+  background-color: #a87791;
+  
+}
+.btn{
+  background-color: #088b52;
+}
+
+
+/* Footer Section */
+.footer {
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex: 2;
+  min-width: 300px;
+  justify-content: space-between;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.deals {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.highlight {
+  color: red;
+}
+.description {
+  max-width: 600px;
+  margin: auto;
+  color: #777;
+}
+
+.deal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.deal-box {
+  width: 250px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.deal-box.large {
+  width: 520px;
+  height: 240px;
+}
+
+.deal-box .text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.deal-box a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .lover {
+    flex-direction: column;
+  }
+
+  .plant-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .join-box {
+    flex-direction: column;
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+}
